@@ -1,0 +1,87 @@
+<style>
+    body {
+        /*background-image: url('images/ttca-blur.png') !important;
+        background-size: 80% 150%;
+        background-repeat: no-repeat;
+        background-position: 235% -50%;*/
+        background-color: lightgoldenrodyellow;
+    }
+    
+    .carousel {
+        zoom: 1.4;
+        margin-top: -2vh !important;
+        padding: 0px !important;
+        height: 300px !important;
+    }
+    
+    .carousel img {
+        width: 130% !important;
+    }
+    
+    .carousel-item {
+        padding: 0px !important;
+        vertical-align: top;
+    }
+    
+    p {
+        text-align: justify;
+        text-justify: inter-word;
+    }
+</style>
+
+<div class="row container">
+    <div class="col s12 m12 l9 push-l3" style="margin-top:0px;">
+        <div class="carousel">
+            <a class="carousel-item" href="#one!"><img src="images/ttca.png"></a>
+            <a class="carousel-item" href="#two!"><img height="150" width="300" src="images/carousel/8.jpg"></a>
+            <a class="carousel-item" href="#three!"><img height="150" width="300" src="images/carousel/7.jpg"></a>
+            <a class="carousel-item" href="#four!"><img height="150" width="300" src="images/carousel/17.jpg"></a>
+            <a class="carousel-item" href="#ten!"><img height="150" width="300" src="images/carousel/9.jpg"></a>
+            <a class="carousel-item" href="#five!"><img height="150" width="300" src="images/carousel/1.jpg"></a>
+            <a class="carousel-item" href="#six!"><img height="150" width="300" src="images/carousel/5.jpg"></a>
+            <a class="carousel-item" href="#seven!"><img height="150" width="300" src="images/carousel/12.jpg"></a>
+            <a class="carousel-item" href="#eight!"><img height="150" width="300" src="images/carousel/13.jpg"></a>
+            <a class="carousel-item" href="#fourteen!"><img height="150" width="300" src="images/carousel/18.jpg"></a>
+            <a class="carousel-item" href="#nine!"><img height="150" width="300" src="images/carousel/14.jpg"></a>
+            <a class="carousel-item" href="#eleven!"><img height="150" width="300" src="images/carousel/11.jpg"></a>
+            <a class="carousel-item" href="#twelve!"><img height="150" width="300" src="images/carousel/3.jpg"></a>
+            <a class="carousel-item" href="#thirteen!"><img height="150" width="300" src="images/carousel/10.jpg"></a>
+            <a class="carousel-item" href="#fifteen!"><img height="150" width="300" src="images/carousel/14.jpg"></a>
+            <a class="carousel-item" href="#sixteen!"><img height="150" width="300" src="images/carousel/15.jpg"></a>
+            <a class="carousel-item" href="#sixteen!"><img height="150" width="300" src="images/carousel/16.jpg"></a>
+            <a class="carousel-item" href="#sixteen!"><img height="150" width="300" src="images/carousel/2.jpg"></a>
+        </div>
+        <p style="font-size: 20px; font-weight: bold;">
+            <span style="font-weight: 900; color: red;">The Telugu Cultural Association</span> is an amalgamation of the
+            Telugu speaking community in and around Calicut with an objective to promote, nurture and foster the rich Telugu
+            culture, language, unique traditions and the talents of the students. We enable all the students, faculty and
+            staff members of Telugu origin to enjoy, appreciate and be a part of our rich and colorful heritage. Since its
+            origin the association has been successful in engaging masses from different backgrounds into the activities
+            organized by TTCA throughout the origin.
+        </p>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function () {
+        // $('.button-collapse').sideNav('show');
+        $('.button-collapse').sideNav({
+            edge: 'left', // Choose the horizontal origin
+            draggable: true // Choose whether you can drag to open on touch screens
+        });
+        $('.side-nav li a').on('click', function (e) {
+            windowsize = $(window).width();
+            if (windowsize < 992) {
+                $('.button-collapse').sideNav('hide');
+            }
+        });
+
+        $('.carousel').carousel();
+
+        window.setInterval(function () {
+            $('.carousel').carousel('next');
+        }, 2000);
+
+    });
+
+</script>

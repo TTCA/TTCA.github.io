@@ -1,0 +1,138 @@
+<style>
+    .tabs .indicator {
+        height: 0px;
+    }
+    
+    .tabs .tab a {
+        font-weight: 500;
+    }
+    
+    .tabs .tab a.active {
+        font-weight: 500;
+        border-bottom: 5px solid #ee6e73;
+    }
+    
+    .swipers {
+        min-height: 55vh !important;
+        padding-left: 2em !important;
+        padding-right: 2em !important;
+    }
+    
+    .buttonhovereffect {
+        margin: 0px auto;
+        border-radius: 4px;
+        /*background-color: #ee6e73;*/
+        border: none;
+        text-align: center;
+        font-size: 24px;
+        padding: 10px;
+        width: 220px;
+        transition: all 0.5s;
+        cursor: pointer;
+        margin: 5px;
+        margin-top: 10px;
+    }
+    
+    .buttonhovereffect a {
+        color: #FFFFFF !important;
+    }
+    
+    .buttonhovereffect span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+    }
+    
+    .buttonhovereffect span:after {
+        content: '\00bb';
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: -20px;
+        transition: 0.5s;
+    }
+    
+    .buttonhovereffect:hover span {
+        padding-right: 25px;
+    }
+    
+    .buttonhovereffect:hover span:after {
+        opacity: 1;
+        right: 0;
+    }
+    
+    .tabs {
+        background-color: #e3e3e3;
+    }
+    
+    .tabs .tab a.active{
+        font-weight: 700 !important;
+        font-size: 25px !important;
+    }
+
+    p{
+        color: white;
+        font-weight: 500;
+    }
+
+    body{
+        background-color: #c5e1a5 !important;
+    }
+
+</style>
+<div class="row">
+    <div class="col s12 m12 l9 push-l3">
+        <h3 class="center-align">What we do?</h3> <br> 
+        <div class="row" style="width:80%;">
+            <ul id="tabs-swipe-demo" class="tabs">
+                <li class="tab col s4"><a href="#academicsswipe">Academics</a></li>
+                <li class="tab col s4"><a href="#eventsswipe">Events</a></li>
+                <li class="tab col s4"><a href="#sportsswipe">Sports</a></li>
+            </ul>
+            <div id="academicsswipe" class="col s12 blue swipers">
+                <h3 class="center-align">Academics</h3>
+                <p>TTCA provides an opportunity where students are encouraged to explore the options which suits them the best, irrespective of the discipline to which they have been admitted. It works as an interlink between the faculty and students for
+                    financing new projects, startups and new talents. </p>
+                <p>TTCA provides means for the students to adjust to the new environment and culture and inform him/her about all policies and procedures of the college.</p>
+                <a ui-sref="app.academics" class="right waves-effect waves-light btn-large"><i class="material-icons right">expand_more</i>Know more</a>
+            </div>
+            <div id="eventsswipe" class="col s12 green swipers">
+                <h3 class="center-align">Events</h3>
+                <p>Being so far from home it is important to nurture the feeling of love, care and uniqueness among the non-locals. We do this by conducting events which brings the whole community under one roof and builds the feeling of togetherness. This
+                    also helps in reminiscing the rich culture and tradition of our region.
+                </p>
+                <a ui-sref="app.events" class="right waves-effect waves-light btn-large"><i class="material-icons right">expand_more</i>Know more</a>
+            </div>
+            <div id="sportsswipe" class="col s12 blue-grey swipers">
+                <h3 class="center-align">Sports</h3>
+                <p>The gulties of NITC have been leading the domain of sports and physical past many years. In this context, as a part of Ugadi celebration, TTCA provides a sound platform to explore hidden talents and also provides a means to showcase their
+                    skills.
+                </p>
+                <a ui-sref="app.sports" class="right waves-effect waves-light btn-large"><i class="material-icons right">expand_more</i>Know more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function() {
+        // $('.button-collapse').sideNav('show');
+        $('.button-collapse').sideNav({
+            edge: 'left', // Choose the horizontal origin
+            draggable: true // Choose whether you can drag to open on touch screens
+        });
+        $('.side-nav li a').on('click', function(e) {
+            windowsize = $(window).width();
+            if (windowsize < 992) {
+                $('.button-collapse').sideNav('hide');
+            }
+        });
+        $(document).ready(function() {
+            $('ul.tabs').tabs({
+                // swipeable: true
+            });
+        });
+
+    });
+</script>

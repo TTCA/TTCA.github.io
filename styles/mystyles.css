@@ -1,0 +1,92 @@
+ header,
+ main,
+ footer {
+     padding-left: 300px;
+ }
+
+ @media only screen and (max-width: 992px) {
+     header,
+     main,
+     footer {
+         padding-left: 0;
+     }
+ }
+
+ #slide-out img {
+     vertical-align: middle;
+     margin-right: 22px !important;
+ }
+
+ .name {
+     font-size: 30px !important;
+     margin-top: 30px !important;
+ }
+
+ body {
+     font-family: 'Didact Gothic', sans-serif !important;
+ }
+
+ p {
+     font-size: 18px;
+ }
+
+ .col.l9.push-l3 h3 {
+     font-family: 'Oxygen', sans-serif;
+     color: white;
+     text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+     /*border: 0.5px solid black;*/
+     /*padding: 10px;*/
+ }
+
+ .modal-content {
+     background-color: #6200ea !important;
+ }
+
+ .modal-content h4 {
+     font-weight: bold;
+     text-align: center;
+     color: white;
+     text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+ }
+
+ .modal-content p {
+     color: gold !important;
+ }
+
+ .responsive-img.circle {
+     height: 150px !important;
+     width: 150px !important;
+ }
+
+ .collapsible-body h4 {
+     font-size: 1.28rem !important;
+     font-weight: bold !important;
+     margin-top: 0px !important;
+     color: gold !important;
+ }
+
+ .collapsible-body p {
+     font-size: 1rem !important;
+     margin-top: 0px !important;
+     text-align: center;
+     color: goldenrod !important;
+ }
+
+ .collapsible-body {
+     background-color: #6200ea !important;
+ }
+
+ /*@media only screen and (min-width: 992px) {
+     .collapsible-body a.btn-large {
+         margin-top: 100px !important;
+     }
+ }*/
+
+ .collapsible-header {
+     background-color: #1b5e20 !important;
+     color: white;
+     font-size: 25px;
+     font-weight: bold;
+     text-align: center !important;
+     /*line-height: 30px !important;*/
+ }

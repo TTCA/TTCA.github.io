@@ -1,0 +1,23 @@
+<div class="row">
+    <div class="col s12 m12 l9 push-l3">
+        <h1>Placements</h1>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function () {
+        // $('.button-collapse').sideNav('show');
+        $('.button-collapse').sideNav({
+            edge: 'left', // Choose the horizontal origin
+            draggable: true // Choose whether you can drag to open on touch screens
+        }
+        );
+        $('.side-nav li a').on('click', function (e) {
+            windowsize = $(window).width();
+            if (windowsize < 992) {
+                $('.button-collapse').sideNav('hide');
+            }
+        });
+    });
+
+</script>
