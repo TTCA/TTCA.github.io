@@ -431,7 +431,7 @@ angular.module('ttca')
         ];
 
         $scope.faculty = [
-            { name: "M.V.L.R Anjaneyulu", img: "images/about/faculty/1.jpg", email: "ranga@nitc.ac.in" },
+            { name: "M.V.L.R Anjaneyulu", img: "images/about/faculty/1.jpg", email: "mvlr@nitc.ac.in" },
             { name: "Dr. Kodi Ranga Swamy", img: "images/about/faculty/2.jpg", email: "ranga@nitc.ac.in" },
             { name: "Dr. Gangadhara Kiran Kumar L", img: "images/about/faculty/3.png", email: "ganga@nitc.ac.in" },
             { name: "Mr. B Rohinikumar", img: "images/about/faculty/4.jpg", email: "rohinikumar@nitc.ac.in" },
