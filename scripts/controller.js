@@ -442,6 +442,11 @@ angular.module('ttca')
             { name: "Sreenu Naik Bhukya", img: "images/about/faculty/9.jpg", email: "bsnaik_81@nitc.ac.in" },
             { name: "Srinivasa T M", img: "images/about/faculty/10.png", email: "srini_2007@nitc.ac.in" },
             { name: "Dr. Vari Sivaji Reddy", img: "images/about/faculty/11.jpg", email: "sivaji@nitc.ac.in" }
-        ]
+        ],
+
+        $scope.tech = [
+            { name: "Md. Azharullah Shariff", img: "images/about/tech/1.jpg", phno: "8137905656" },
+            { name: "Krishna Sai Gullapally", img: "images/about/tech/2.jpg", phno: "8089779919" }
+        ];
 
     }]);
