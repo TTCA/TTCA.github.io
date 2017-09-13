@@ -1,0 +1,383 @@
+body{
+  font-family: "Avenir",sans-serif;
+}
+.text_field{
+  font-size: 1.5em;
+  padding: 12.5px;
+  width: 80%;
+  text-align: center;
+  margin: 15px;
+  outline: none;
+  border-color:#8B1717;
+  border-radius: 5px;
+  border-width: 1.5px;
+}
+.button{
+  font-size: 1.6em;
+  padding: 15px;
+  width: 50%;
+  margin: 30px;
+  text-align: center;
+  background-color: #8B1717;
+  color:#fff;
+  border-radius: 10px;
+}
+.select{
+  -webkit-appearance: none; box-shadow: none ! important;
+  padding: 12.5px;
+  width: 80%;
+  font-size: 1.5em;
+  text-align: center;
+  margin: 15px;
+  outline: none;
+}
+
+#container{
+  background-color: #fff;
+  color:#8B1717;
+  position: fixed;
+  height: calc(100% - 70px);
+  width: 100%;
+  top:20px;
+  left:0px;
+  overflow-y: scroll;
+}
+
+#menu{
+  position: fixed;;
+  top:20px;
+  left:0;
+  width: 100%;
+  min-height: 100%;
+  background-color: rgba(255,255,255,0.6);
+  text-align: left;
+  z-index: 1;
+  display: none;
+}
+#menu_username{
+  text-align: center;
+    padding: 10px;
+    font-size: 24px;
+    margin:40px;
+}
+#menu_itemlist{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-left: 20%;
+  height: 100%;
+}
+.menu_item{
+  font-weight: 500;
+  font-size: 24px;
+  padding-top: 10%;
+}
+
+#menu_bar{
+  height: 50px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border-top-style: solid;
+  border-width: 1px;
+  align-items: center;
+  border-color: #8B1717;
+  background-color: #fff;
+    z-index: 2;
+}
+
+#loginpage{
+  min-height: 100%;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+#loginpage_college{
+  font-size: 48px;
+  font-weight: 700;
+}
+#loginpage_app{
+  font-size: 36px;
+  font-weight: 200;
+}
+#loginpage_form{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;;
+}
+
+
+
+
+#messfeedbacks{
+
+}
+
+.messfeedback_messbar{
+  width: calc(100% - 20px);
+  margin: 5px;
+  border-style: solid;
+  border-width: 1px;
+  background-color: #eee;
+  border-color: #eee;
+  padding: 5px;
+}
+.messfeedback_firstbar{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px;
+}
+.messfeedback_messname{
+  font-size: 2em;
+}
+.messfeedback_rating{
+  font-size: 2.5em;
+}
+.messfeedback_scorebar{
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  margin: 10px;
+}
+.messfeedback_score_food{
+  color:#300;
+}
+.messfeedback_score_food_title{
+  font-size: 0.5em;
+}
+.messfeedback_score_food_score{
+  font-size: 1.8em;
+}
+.messfeedback_score_staff{
+    color:#330;
+}
+.messfeedback_score_staff_title{
+  font-size: 0.5em;
+}
+.messfeedback_score_staff_score{
+  font-size: 1.8em;
+}
+.messfeedback_score_extras{
+      color:#303;
+}
+.messfeedback_score_extras_title{
+  font-size: 0.5em;
+}
+.messfeedback_score_extras_score{
+  font-size: 1.8em;
+}
+.messfeedback_recommended{
+  text-align: center;
+  padding: 3px;
+}
+.messfeedback_recommended_bar{
+  display: flex;
+  justify-content: space-around;
+  margin: 10px;
+  border-radius: 50%;
+  clip: auto;
+}
+.messfeedback_recommended_kerala{
+  background-color: #a00;
+  color:#fff;
+  text-align: center;
+  border-width: 1px;
+  border-style:solid;
+  border-color: #a00;
+}
+.messfeedback_recommended_ap{
+  background-color: #090;
+  color:#fff;
+  text-align: center;
+  border-width: 1px;
+  border-style:solid;
+  border-color: #090;
+}
+.messfeedback_recommended_north{
+  background-color: #0aa;
+  color:#fff;
+  text-align: center;
+  border-width: 1px;
+  border-style:solid;
+  border-color: #0aa;
+}
+.messfeedback_recommended_others{
+  background-color: #505;
+  color:#fff;
+  text-align: center;
+  border-width: 1px;
+  border-style:solid;
+  border-color: #505;
+}
+
+
+
+#myfeedback{
+  text-align: center;
+}
+#myfeedback_form{
+  padding-top: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    min-height: 100%;
+}
+#myfeedback_hostel_label{
+  font-size: 1.5em;
+}
+#myfeedback_hostel_textbox{
+  -webkit-appearance: none; box-shadow: none ! important;
+  padding: 12.5px;
+  width: 80%;
+  font-size: 1.5em;
+  text-align: center;
+  margin: 15px;
+  outline: none;
+}
+#myfeedback_recommend_select{
+    -webkit-appearance: none; box-shadow: none ! important;
+    padding: 12.5px;
+    width: 80%;
+    font-size: 1.5em;
+    text-align: center;
+    margin: 15px;
+    outline: none;
+}
+#myfeedback_submit{
+}
+
+#myfeedback_done{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+#myfeedback_verified{
+  text-align: center;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+#myfeedback_sucessmessage{
+  text-align: center;
+  font-size: 1.2em;
+}
+
+
+#submitcomplaint{
+  text-align: center;
+  align-items: center;
+}
+#submitcomplaint_form{
+  padding-top: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    min-height: 100%;
+}
+#submitcomplaint_hostel_label{
+  font-size: 1.5em;
+}
+#submitcomplaint_recommend_select{
+    -webkit-appearance: none; box-shadow: none ! important;
+    padding: 12.5px;
+    width: 80%;
+    font-size: 1.5em;
+    text-align: center;
+    margin: 15px;
+    outline: none;
+}
+#submitcomplaint_action{
+}
+#submitcomplaint_done{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+#submitcomplaint_verified{
+  text-align: center;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+#submitcomplaint_sucessmessage{
+  text-align: center;
+  font-size: 1.2em;
+}
+
+
+
+
+#mess{
+
+}
+#mess_totalbar{
+  position: fixed;
+  top:20px;
+  left:0px;
+  height: 50px;
+  width: 100%;
+  display: flex;
+  background-image: linear-gradient(#dfdfdf,#ddd);
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1.6em;
+}
+#mess_list{
+  position: absolute;
+  top:70px;
+  width: 100%;
+  left:0;
+  flex-direction: column;
+  color:#000;
+}
+.mess_daybar{
+  background-color: #eee;
+  margin: 5px;
+  width: calc(100% - 10px);
+  border-radius: 10px;
+  border-color: #777;
+}
+.mess_daytitle{
+  text-align: center;
+  background-image: linear-gradient(#dedede,#ddd);
+  padding: 5px;
+}
+.mess_extraslist{
+  padding: 5px;
+  border-color: #777;
+}
+.mess_extrabar{
+  display:flex;
+  border-bottom-style: solid;
+  border-color:#bbb;
+  border-width: 1px;
+  margin: 2px;
+  justify-content: space-between;
+  padding: 4px;
+}
+.mess_extrabar_last{
+  border-bottom-style: none;
+}
+
+.mess_extraname{
+  font-size: 1.4em;
+}
+.mess_extraitemprice{
+  font-size: 1.7em;
+}
+.mess_time{
+  font-size: 0.6em;
+}

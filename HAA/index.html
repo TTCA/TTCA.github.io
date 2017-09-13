@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src *; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data:">
+    <script src="jquery.js"></script>
+    <script src='formsubmit.js'></script>
+    <script src='loginpage.js'></script>
+    <script src='views.js'></script>
+    <link rel='stylesheet' href='styles.css'></script>
+  </head>
+  <body>
+      <div id='menu'>
+        <div id='menu_username'>B140087CS</div>
+        <div id='menu_itemlist'>
+          <div class='menu_item' onclick='load_submitcomplaint_view();deactivate_menu();'>Hostel Complaints</div>
+          <!--<div class='menu_item' onclick='load_submitcomplaint_view();deactivate_menu();'>Room Servicing</div>-->
+          <div class='menu_item' onclick='load_contacts_view();deactivate_menu();'>Contacts</div>
+          <div class='menu_item' onclick='load_loginpage_view();deactivate_menu();'>Log Out</div>
+        </div>
+      </div>
+      <div id='container'>
+
+      </div>
+      <div id='menu_bar'>
+        <div id='messfeedbacks_menu'><img id='messfeedbacks_img' src='messfeedback.png' height='30px' style="filter: grayscale(100%);" onclick='load_messfeedbacks_view();deactivate_menu();'></div>
+        <div id='myfeedback_menu'><img id='myfeedback_img' src='myfeedback.png'  height='30px' style="filter: grayscale(100%);" onclick='load_myfeedback_view();deactivate_menu();'></div>
+        <div id='messussage_menu'><img id='messusage_img' src='messusage.png'  height='30px' style="filter: grayscale(100%);" onclick='load_mess_view();deactivate_menu();'></div>
+        <div><img src='menu.jpg' id='menu_activator' style="filter: grayscale(100%);" onclick='activate_menu()'  height='30px'></div>
+      </div>
+
+  </body>
+</html>
